@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDRRMO Banga Grievance Redress Mechanism</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        form {
+            margin-top: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 1rem;
+            color: #333;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-info {
+            background-color: #003366;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f5f7fa;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>MDRRMO Grievance Redress Mechanism</h1>
+    </div>
+
+    <div class="container">
+        <h2>Submit Your Grievance</h2>
+        <p>We value your feedback and are committed to addressing your concerns. If you have any issues related to the Emergency Dispatch Telecommunication Management System (EDTMS) or the Electronic Patient Care Record - Rapid Assessment Support (EPCR-RAS), please use the form below to submit your grievance. Your submission will be treated with the utmost confidentiality and urgency. Please note that all entries will be forwarded at the end of the business hour.</p>
+
+        <form action="https://formspree.io/f/xwpegoyd" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="grievance-type">Type of Grievance:</label>
+            <select id="grievance-type" name="grievance_type" required>
+                <option value="" disabled selected>Select a type</option>
+                <option value="system_issue">System Issue</option>
+                <option value="service_complaint">Service Complaint</option>
+                <option value="data_privacy">Data Privacy Concern</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="details">Grievance Details:</label>
+            <textarea id="details" name="details" rows="6" required></textarea>
+
+            <button type="submit" class="btn">Submit Grievance</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or need further assistance, please contact us:</p>
+            <p>Email: mdrrmobanga5601@gmail.com</p>
+            <p>Phone: 2677261</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 MDRRMO. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
